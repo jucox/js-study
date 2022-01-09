@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(0, 174, 255);
+    font: normal 14pt arial;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+section {
+    background-color: white;
+    width: 500px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+
+input#button {
+    margin-bottom: 15px;
+}
+
+footer {
+    text-align: center;
+    color: white;
+}

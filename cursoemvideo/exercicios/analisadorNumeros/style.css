@@ -1,0 +1,34 @@
+body {
+    background-color: rgb(182, 104, 255);
+    font: normal 12pt arial;
+}
+
+header {
+    text-align: center;
+    color: white;
+}
+section {
+    width: 600px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 3px 3px 10px black;
+    border: 3px solid black;
+    margin: auto;
+}
+
+select#listaValores {
+    width: 150px;
+}
+
+div#res {
+    padding-top: 10px;
+}
+
+
+
+footer {
+    color: white;
+    font-style: italic;
+    text-align: center;
+}

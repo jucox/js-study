@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Nacionalidade</title>
+</head>
+<body>
+    <h1>Teste de Nacionalidade</h1>
+    <p>Digite o seu país de origem e veja se você é brasileiro ou não:</p>
+    <input type="string" name="paisOrigem" id="paisOrigem">
+    <input type="button" value="VALIDAR" onclick="validar()">
+    <div id="validacao">
+
+    </div>
+    <script>
+        var paisOrigem = window.document.getElementById('paisOrigem')
+        var validacao = window.document.getElementById('validacao')
+
+        function validar(){
+            var paisOrigemS = String(paisOrigem.value.toUpperCase())
+            if(paisOrigemS == "BRASIL"){
+                validacao.innerHTML = `<p>Se o seu país de origem é ${paisOrigemS}, então você <strong>é brasileiro</strong>!</p>`
+            } else {
+                validacao.innerHTML = `<p>Se o seu país de origem é ${paisOrigemS}, então você <strong>NÃO é brasileiro</strong>!</p>`
+            }
+        }
+    </script>
+</body>
+</html>

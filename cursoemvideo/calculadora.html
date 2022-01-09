@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <h2>Soma</h2>
+    <input type="number" name="v1" id="v1"> +
+    <input type="number" name="v2" id="v2">
+    <input type="button" value="SOMAR" onclick="somar()">
+    <div id="result"></div>
+    <h2>Subtração</h2>
+    <input type="number" name="v1" id="v1"> -
+    <input type="number" name="v2" id="v2">
+    <input type="button" value="SUBTRAIR" onclick="subtrair()">
+    <div id="result"></div>
+    <h2>Multiplicação</h2>
+    <input type="number" name="v1" id="v1"> x
+    <input type="number" name="v2" id="v2">
+    <input type="button" value="MULTIPLICAR" onclick="multiplicar()">
+    <div id="result"></div>
+    <h2>Divisão</h2>
+    <input type="number" name="v1" id="v1"> /
+    <input type="number" name="v2" id="v2">
+    <input type="button" value="DIVIDIR" onclick="dividir()">
+    <div id="result"></div>
+    <script>
+        function somar() {
+            var v1 = window.document.getElementById('v1')
+            var v2 = window.document.getElementById('v2')
+            var result = window.document.getElementById('result')
+            var n1 = Number(v1.value)
+            var n2 = Number(v2.value)
+            var soma = n1 + n2
+            result.innerText = `O resultado é ${soma}`
+        }
+
+        function subtrair() {
+            var v1 = window.document.getElementById('v1')
+            var v2 = window.document.getElementById('v2')
+            var result = window.document.getElementById('result')
+            var n1 = Number(v1.value)
+            var n2 = Number(v2.value)
+            var subtracao = n1 - n2
+            result.innerText = `O resultado é ${subtracao}`
+        }
+
+        function multiplicar() {
+            var v1 = window.document.getElementById('v1')
+            var v2 = window.document.getElementById('v2')
+            var result = window.document.getElementById('result')
+            var n1 = Number(v1.value)
+            var n2 = Number(v2.value)
+            var soma = n1 * n2
+            result.innerText = `O resultado é ${soma}`
+        }
+
+        function dividir() {
+            var v1 = window.document.getElementById('v1')
+            var v2 = window.document.getElementById('v2')
+            var result = window.document.getElementById('result')
+            var n1 = Number(v1.value)
+            var n2 = Number(v2.value)
+            var soma = n1 / n2
+            result.innerText = `O resultado é ${soma}`
+        }
+    </script>
+</body>
+</html>
